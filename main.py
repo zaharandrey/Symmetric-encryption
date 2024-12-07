@@ -44,6 +44,13 @@ h = hmac.HMAC(key, hashes.SHA256(), backend=default_backend())
 h.update(encrypted_data)
 mac = h.finalize()
 
+# Збереження результатів у файл
+with open('encrypted_data.txt', 'w') as file:
+    file.write(f"Salt: {salt.hex()}\n")
+    file.write(f"IV: {iv.hex()}\n")
+    file.write(f"Encrypted Data: {encrypted_data.hex()}\n")
+    file.write(f"HMAC: {mac.hex()}\n")
+
 # Вивід результатів
 print(f"Ключ: {key.hex()}")
 print(f"IV: {iv.hex()}")
