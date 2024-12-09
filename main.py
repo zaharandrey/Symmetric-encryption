@@ -58,13 +58,13 @@ print(f"Зашифровані дані: {encrypted_data.hex()}")
 print(f"HMAC: {mac.hex()}")
 
 
-"C:\Users\LENOVO\PycharmProjects\symmetric encryption\.venv\Scripts\python.exe" "C:\Users\LENOVO\PycharmProjects\symmetric encryption\main.py" 
+# "C:\Users\LENOVO\PycharmProjects\symmetric encryption\.venv\Scripts\python.exe" "C:\Users\LENOVO\PycharmProjects\symmetric encryption\main.py" 
 Ключ: c5c9cf6c2a1694cc1cf4d7281d0ddb662fb0736fa70c6e2ed5a2fbd4492dd6e5
 IV: bf680d6af3b690af598d8b365a6462cc
 Зашифровані дані: bc86ca7eb1c50568d0b69678fd3aee19cc531eb2e47ef898b77fcda2972d050d53b2f8aae583f90a158436c7cc3f8309
 HMAC: 0c081916aba915af75fe9e112163b80afa78afd6a99a9ca4f986e3cab16aa703
 
-Process finished with exit code 0
+# Process finished with exit code 0
 
 
 
@@ -119,8 +119,8 @@ unpadded_data = unpadder.update(decrypted_data) + unpadder.finalize()
 print(f"Розшифровані дані: {unpadded_data.decode('utf-8')}")
 
 
-"C:\Users\LENOVO\PycharmProjects\Data decryption\.venv\Scripts\python.exe" "C:\Users\LENOVO\PycharmProjects\Data decryption\main.py" 
+# "C:\Users\LENOVO\PycharmProjects\Data decryption\.venv\Scripts\python.exe" "C:\Users\LENOVO\PycharmProjects\Data decryption\main.py" 
 Розшифровані дані: Confidential data that needs encryption.
 
-Process finished with exit code 0
+# Process finished with exit code 0
 
